@@ -27,11 +27,11 @@ table {
   width: 100%;
 }
 
-table td {
+/*table td {
   font-family: sans-serif;
   font-size: 14px;
   vertical-align: top;
-}
+}*/
 
 /* Body & Container */
 .body {
@@ -43,16 +43,16 @@ table td {
   display: block;
   Margin: 0 auto !important;
   /* makes it centered */
-  max-width: 580px;
+  max-width: 600px;
   padding: 10px;
-  width: 580px;
+  width: 600px;
 }
 /* This should also be a block element, so that it will fill 100% of the .container */
 .content {
   box-sizing: border-box;
   display: block;
   Margin: 0 auto;
-  max-width: 580px;
+  max-width: 600px;
   padding: 10px;
 }
 
@@ -75,9 +75,9 @@ table td {
   width: 100%;
 }
 
-.off {
-  background: #FFF7E5;
-  border-radius: 3px;
+.color {
+  background: #623F67;
+  height: 100px;
   width: 100%;
 }
 
@@ -88,14 +88,17 @@ table td {
 
 .footer {
   clear: both;
-  /*padding-top: 10px;*/
   text-align: center;
   width: 100%;
 }
 
+.footer-banner {
+  width: 200px;
+}
+
 /* Typography */
 h1 {
-  color: #000000;
+  color: #000;
   font-family: 'Roboto Slab', serif;
   text-transform: uppercase;
   text-align: center;
@@ -104,12 +107,25 @@ h1 {
 p,
 ul,
 li {
+  color: #000;
   font-family: 'Roboto', serif;
 }
 
 a {
-  color: #3498db;
-  text-decoration: underline;
+  color: #8E8C3F;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #AB493C;
+  font-weight: bold;
+}
+
+.plum {
+  color: #623F67;
+  /*font-style: italic;*/
+  font-weight: bold;
 }
 
 /* Buttons */
@@ -127,35 +143,30 @@ a {
 }
 
 .btn table td {
-  background-color: #ffffff;
-  border-radius: 5px;
+  background: #FFF;
+  border: 2px solid #000;
   text-align: center;
 }
 
 .btn a {
-  background-color: #ffffff;
-  border: solid 1px #3498db;
+  /*background-color: #ffffff;
+  border: solid 1px #FFF;*/
   border-radius: 5px;
   box-sizing: border-box;
-  color: #3498db;
+  /*color: #3498db;*/
   cursor: pointer;
   display: inline-block;
   font-size: 14px;
   font-weight: bold;
+  font-family: 'Roboto', serif;
   margin: 0;
   padding: 12px 25px;
-  text-decoration: none;
-  text-transform: capitalize;
-}
-
-.btn-primary table td {
-  background-color: #EEB738;
+  /*text-decoration: none;*/
+  /*text-transform: uppercase;*/
 }
 
 .btn-primary a {
-  background-color: #EEB738;
-  border-color: #EEB738;
-  color: #ffffff;
+  color: #000;
 }
 
 /* Other Styles */
@@ -183,13 +194,13 @@ a {
   clear: both;
 }
 
-.mt0 {
+/*.mt0 {
   margin-top: 0;
 }
 
 .mb0 {
   margin-bottom: 0;
-}
+}*/
 
 .preheader {
   color: transparent;
@@ -204,14 +215,9 @@ a {
   width: 0;
 }
 
-.powered-by a {
-  text-decoration: none;
-}
-
 hr {
   border: 0;
   border-bottom: 1px solid #000;
-  /*Margin: 20px 0;*/
 }
 
 /* Media Queries */
