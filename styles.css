@@ -1,23 +1,17 @@
-/* Google Fonts */
+/* --- Google Fonts --- */
 @import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab');
 
-/* Color Palette
-  Brick: HEX: #AB493C;
-  Plum: HEX: #623F67;
-  Sage: HEX: #8E8C3F;
-  Dandelion: HEX: #EEB738;
+/* --- Color Palette ---
+Brick: HEX: #AB493C;
+Plum: HEX: #623F67;
+Sage: HEX: #8E8C3F;
+Dandelion: HEX: #EEB738;
 */
 
-/* Global Resets */
-img {
-  border: none;
-  -ms-interpolation-mode: bicubic;
-  max-width: 100%;
-}
-
+/* --- Global Resets --- */
 body {
-  background-color: #f6f6f6;
-  font-family: sans-serif;
+  background-color: #F6F6F6;
+  font-family: Arial;
   -webkit-font-smoothing: antialiased;
   font-size: 14px;
   line-height: 1.4;
@@ -26,35 +20,35 @@ body {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
-
+img {
+  border: none;
+  -ms-interpolation-mode: bicubic;
+  max-width: 100%;
+}
 table {
   border-collapse: separate;
   mso-table-lspace: 0pt;
   mso-table-rspace: 0pt;
   width: 100%;
 }
-
-/*table td {
-  font-family: sans-serif;
+table td {
+  font-family: Arial;
   font-size: 14px;
   vertical-align: top;
-}*/
+}
 
-/* Body & Container */
+/* --- Body, Container, Content --- */
 .body {
-  background-color: #f6f6f6;
+  background-color: #F6F6F6;
   width: 100%;
 }
-/* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
 .container {
   display: block;
   margin: 0 auto !important;
-  /* makes it centered */
   max-width: 600px;
   padding: 10px;
   width: 600px;
 }
-/* This should also be a block element, so that it will fill 100% of the .container */
 .content {
   box-sizing: border-box;
   display: block;
@@ -63,146 +57,98 @@ table {
   padding: 10px;
 }
 
-/* Header, Main, Footer */
+/* --- Header, Main, Footer, Wrapper --- */
 .header {
   background: #AB493C;
   border-radius: 3px;
   width: 100%;
 }
-
 .main {
   background: #FFF;
   border-radius: 3px;
   width: 100%;
 }
-
-.color {
-  background: #AB493C;
-  height: 100px;
-  width: 100%;
-}
-
-.wrapper {
-  box-sizing: border-box;
-  padding: 20px;
-}
-
 .footer {
   clear: both;
   text-align: center;
   width: 100%;
 }
-
-.footer-banner {
-  width: 200px;
+.wrapper {
+  box-sizing: border-box;
+  padding: 15px;
 }
 
-/* Typography */
+/* --- Typography --- */
 h1 {
   color: #000;
   font-family: 'Roboto Slab', serif;
-  text-transform: uppercase;
   text-align: center;
+  text-transform: uppercase;
 }
-
+a {
+  color: #8E8C3F;
+  font-weight: bold;
+  text-decoration: none;
+}
+a:hover {
+  color: #623F67;
+  font-weight: bold;
+}
 p,
 ul,
 li {
   color: #000;
   font-family: 'Roboto', serif;
 }
-
-a {
-  color: #8E8C3F;
-  font-weight: bold;
-  text-decoration: none;
+ul {
+  list-style-type: circle;
 }
-
-a:hover {
+.color {
   color: #AB493C;
   font-weight: bold;
 }
-
-.plum {
+.important {
   color: #AB493C;
-  /*font-style: italic;*/
-  font-weight: bold;
+  font-size: 18px;
+  font-variant: small-caps;
+}
+.info {
+  padding: 0 40px;
 }
 
-/* Buttons */
+/* --- Buttons --- */
 .btn {
   box-sizing: border-box;
   width: 100%;
 }
-
-.btn > tbody > tr > td {
-  padding-bottom: 15px;
-}
-
 .btn table {
   width: auto;
 }
-
 .btn table td {
-  background: #FFF;
-  border: 2px solid #000;
+  background: #EEB738;
+  /*border: 2px solid #000;*/
+  border-radius: 5px;
   text-align: center;
 }
-
 .btn a {
-  /*background-color: #ffffff;
-  border: solid 1px #FFF;*/
-  /*border-radius: 5px;*/
   box-sizing: border-box;
-  /*color: #3498db;*/
   cursor: pointer;
   display: inline-block;
   font-size: 14px;
   font-weight: bold;
   font-family: 'Roboto', serif;
+  font-variant: small-caps;
   margin: 0;
   padding: 12px 25px;
-  /*text-decoration: none;*/
-  /*text-transform: uppercase;*/
 }
-
 .btn-primary a {
-  color: #000;
+  color: #FFF;
 }
 
-/* Other Styles */
-.last {
-  margin-bottom: 0;
-}
-
-.first {
-  margin-top: 0;
-}
-
-.align-center {
-  text-align: center;
-}
-
-.align-right {
-  text-align: right;
-}
-
-.align-left {
-  text-align: left;
-}
-
+/* --- Other Styles --- */
 .clear {
   clear: both;
 }
-
-/*.mt0 {
-  margin-top: 0;
-}
-
-.mb0 {
-  margin-bottom: 0;
-}*/
-
 .preheader {
   color: transparent;
   display: none;
@@ -215,13 +161,12 @@ a:hover {
   visibility: hidden;
   width: 0;
 }
-
 hr {
   border: 0;
   border-bottom: 1px solid #000;
 }
 
-/* Media Queries */
+/* --- Media Queries --- */
 @media only screen and (max-width: 620px) {
   table[class=body] h1 {
     font-size: 28px !important;
@@ -264,7 +209,7 @@ hr {
   }
 }
 
-/* Head Media Query */
+/* --- Head Media Query --- */
 @media all {
   .ExternalClass {
     width: 100%;
@@ -277,19 +222,11 @@ hr {
   .ExternalClass div {
     line-height: 100%;
   }
-  .apple-link a {
-    color: inherit !important;
-    font-family: inherit !important;
-    font-size: inherit !important;
-    font-weight: inherit !important;
-    line-height: inherit !important;
-    text-decoration: none !important;
-  }
   .btn-primary table td:hover {
     background-color: #623F67 !important;
   }
   .btn-primary a:hover {
     background-color: #623F67 !important;
-    border-color: #623F67 !important;
+    border-radius: 5px;
   }
 }
