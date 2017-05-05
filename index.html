@@ -1,124 +1,359 @@
 <!doctype html>
 <html>
-<head>
-  <meta name="viewport" content="width=device-width" />
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <link rel="stylesheet" href="styles.css">
-  <title>Sample University Email</title>
+  <head>
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <title>Sample University Email</title>
+    <!-- Stylesheet -->
+    <style>
+    /* --- Google Fonts --- */
+    @import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab');
 
-</head>
-<body>
-  <table border="0" cellpadding="0" cellspacing="0" class="body">
-    <tr>
-      <td>&nbsp;</td>
-      <td class="container">
-        <div class="content">
+    /* --- Color Palette ---
+    Brick: HEX: #AB493C;
+    Plum: HEX: #623F67;
+    Sage: HEX: #8E8C3F;
+    Dandelion: HEX: #EEB738;
+    */
 
-          <!--Preview Text-->
-          <span class="preheader">Shape the future of your academic passions.</span>
+    /* --- Global Resets --- */
+    body {
+      background-color: #F6F6F6;
+      font-family: Arial;
+      -webkit-font-smoothing: antialiased;
+      font-size: 14px;
+      line-height: 1.4;
+      margin: 0;
+      padding: 0;
+      -ms-text-size-adjust: 100%;
+      -webkit-text-size-adjust: 100%;
+    }
+    img {
+      border: none;
+      -ms-interpolation-mode: bicubic;
+      max-width: 100%;
+    }
+    table {
+      border-collapse: separate;
+      mso-table-lspace: 0pt;
+      mso-table-rspace: 0pt;
+      width: 100%;
+    }
+    table td {
+      font-family: Arial;
+      font-size: 14px;
+      vertical-align: top;
+    }
 
-          <!-- Header -->
-          <table border="0" cellpadding="0" cellspacing="0" class="main">
-            <tbody>
+    /* --- Body, Container, Content --- */
+    .body {
+      background-color: #F6F6F6;
+      width: 100%;
+    }
+    .container {
+      display: block;
+      margin: 0 auto !important;
+      max-width: 600px;
+      padding: 10px;
+      width: 600px;
+    }
+    .content {
+      box-sizing: border-box;
+      display: block;
+      margin: 0 auto;
+      max-width: 600px;
+      padding: 10px;
+    }
+
+    /* --- Header, Main, Footer, Wrapper --- */
+    .header {
+      background: #AB493C;
+      border-radius: 3px;
+      width: 100%;
+    }
+    .main {
+      background: #FFF;
+      border-radius: 3px;
+      width: 100%;
+    }
+    .footer {
+      clear: both;
+      text-align: center;
+      width: 100%;
+    }
+    .wrapper {
+      box-sizing: border-box;
+      padding: 15px;
+    }
+
+    /* --- Typography --- */
+    h1 {
+      color: #000;
+      font-family: 'Roboto Slab', serif;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    a {
+      color: #8E8C3F;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    a:hover {
+      color: #623F67;
+      font-weight: bold;
+    }
+    p,
+    ul,
+    li {
+      color: #000;
+      font-family: 'Roboto', serif;
+    }
+    ul {
+      list-style-type: circle;
+    }
+    .color {
+      color: #AB493C;
+      font-weight: bold;
+    }
+    .important {
+      color: #AB493C;
+      font-size: 18px;
+      font-variant: small-caps;
+    }
+    .info {
+      padding: 0 40px;
+    }
+
+    /* --- Buttons --- */
+    .btn {
+      box-sizing: border-box;
+      width: 100%;
+    }
+    .btn table {
+      width: auto;
+    }
+    .btn table td {
+      background: #EEB738;
+      /*border: 2px solid #000;*/
+      border-radius: 5px;
+      text-align: center;
+    }
+    .btn a {
+      box-sizing: border-box;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 14px;
+      font-weight: bold;
+      font-family: 'Roboto', serif;
+      font-variant: small-caps;
+      margin: 0;
+      padding: 12px 25px;
+    }
+    .btn-primary a {
+      color: #FFF;
+    }
+
+    /* --- Other Styles --- */
+    .clear {
+      clear: both;
+    }
+    .preheader {
+      color: transparent;
+      display: none;
+      height: 0;
+      max-height: 0;
+      max-width: 0;
+      opacity: 0;
+      overflow: hidden;
+      mso-hide: all;
+      visibility: hidden;
+      width: 0;
+    }
+    hr {
+      border: 0;
+      border-bottom: 1px solid #000;
+    }
+
+    /* --- Media Queries --- */
+    @media only screen and (max-width: 620px) {
+      table[class=body] h1 {
+        font-size: 28px !important;
+        margin-bottom: 10px !important;
+      }
+      table[class=body] p,
+      table[class=body] ul,
+      table[class=body] ol,
+      table[class=body] td,
+      table[class=body] span,
+      table[class=body] a {
+        font-size: 16px !important;
+      }
+      table[class=body] .wrapper,
+      table[class=body] .article {
+        padding: 10px !important;
+      }
+      table[class=body] .content {
+        padding: 0 !important;
+      }
+      table[class=body] .container {
+        padding: 0 !important;
+        width: 100% !important;
+      }
+      table[class=body] .main {
+        border-left-width: 0 !important;
+        border-radius: 0 !important;
+        border-right-width: 0 !important;
+      }
+      table[class=body] .btn table {
+        width: 100% !important;
+      }
+      table[class=body] .btn a {
+        width: 100% !important;
+      }
+      table[class=body] .img-responsive {
+        height: auto !important;
+        max-width: 100% !important;
+        width: auto !important;
+      }
+    }
+
+    /* --- Head Media Query --- */
+    @media all {
+      .ExternalClass {
+        width: 100%;
+      }
+      .ExternalClass,
+      .ExternalClass p,
+      .ExternalClass span,
+      .ExternalClass font,
+      .ExternalClass td,
+      .ExternalClass div {
+        line-height: 100%;
+      }
+      .btn-primary table td:hover {
+        background-color: #623F67 !important;
+      }
+      .btn-primary a:hover {
+        background-color: #623F67 !important;
+        border-radius: 5px;
+      }
+    }
+    </style>
+
+  </head>
+  <body>
+    <table border="0" cellpadding="0" cellspacing="0" class="body">
+      <tr>
+        <td>&nbsp;</td>
+        <td class="container">
+          <div class="content">
+
+            <!--Preview Text-->
+            <span class="preheader">Shape the future of your academic passions.</span>
+
+            <!-- Header -->
+            <table border="0" cellpadding="0" cellspacing="0" class="main">
+              <tbody>
+                <tr>
+                  <td>
+                    <table border="0" cellpadding="0" cellspacing="0">
+                      <tbody>
+                        <tr>
+                          <td>
+                            <img src="https://gallery.mailchimp.com/6d9b39a671fced4a59b9bbbc0/images/201a2231-9ebd-49e1-84fe-772c78acfec7.png" alt="Sample University Header">
+
+                            <!-- Button -->
+                            <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+                              <tbody>
+                                <tr>
+                                  <td align="center" class="info">
+                                    <table border="0" cellpadding="0" cellspacing="0">
+                                      <tbody>
+                                        <tr>
+                                          <td>
+                                            <a href="#" target="_blank">Confirm Your Interest!</a>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <!-- End Button -->
+
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <!-- End Header -->
+
+            <!-- Main Content -->
+            <table class="main">
               <tr>
-                <td>
+                <td class="wrapper">
                   <table border="0" cellpadding="0" cellspacing="0">
-                    <tbody>
-                      <tr>
-                        <td>
-                          <img src="https://gallery.mailchimp.com/6d9b39a671fced4a59b9bbbc0/images/201a2231-9ebd-49e1-84fe-772c78acfec7.png" alt="Sample University Header" class="header-image">
+                    <tr>
+                      <td class="info">
+                        <p><span class="important">{First_Name},</span></p>
+                        <p><span class="color">Sample University</span> offers interdisciplinary programs to help our students become forward-thinkers and global innovators.</p>
+                        <ul>
+                          <li>A <span class="color">dynamic campus environment</span> features state-of-the-art technology to enrich our curriculum and help our students succeed.</li>
+                          <li>A commitment to connecting you with the world outside the classroom through <span class="color">required internships, experiential learning</span> opportunities, and <span class="color">service projects</span> will prepare you for life after graduation.</li>
+                          <li>A beautiful <span class="color">residential campus</span> in Anytown, USA is just minutes from sports arenas, music venues, shopping, dining, and national landmarks.</li>
+                        </ul>
+                        <p><span class="important">Interested?</span></p>
+                        <p><a href="#">Confirm your informaton</a> now and we'll keep you "in the know" with the latest campus news and events.</p>
 
-                          <!-- Button -->
-                          <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
-                            <tbody>
-                              <tr>
-                                <td align="center">
-                                  <table border="0" cellpadding="0" cellspacing="0">
-                                    <tbody>
-                                      <tr>
-                                        <td>
-                                          <a href="#" target="_blank">Confirm Your Interest!</a>
-                                        </td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                          <!-- End Button -->
+                        <!-- Button -->
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+                          <tbody>
+                            <tr>
+                              <td align="center">
+                                <table border="0" cellpadding="0" cellspacing="0">
+                                  <tbody>
+                                    <tr>
+                                      <td> <a href="#" target="_blank">Confirm Your Interest!</a> </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <!-- End Button -->
 
-                        </td>
-                      </tr>
-                    </tbody>
+                      </td>
+                    </tr>
                   </table>
                 </td>
               </tr>
-            </tbody>
-          </table>
-          <!-- End Header -->
-
-          <!-- Main Content -->
-          <table class="main">
-            <tr>
-              <td class="wrapper">
-                <table border="0" cellpadding="0" cellspacing="0">
-                  <tr>
-                    <td class="info">
-                      <p><span class="important">{First_Name},</span></p>
-                      <p><span class="color">Sample University</span> offers interdisciplinary programs to help our students become forward-thinkers and global innovators.</p>
-                      <ul>
-                        <li>A <span class="color">dynamic campus environment</span> features state-of-the-art technology to enrich our curriculum and help our students succeed.</li>
-                        <li>A commitment to connecting you with the world outside the classroom through <span class="color">required internships, experiential learning</span> opportunities, and <span class="color">service projects</span> will prepare you for life after graduation.</li>
-                        <li>A beautiful <span class="color">residential campus</span> in Anytown, USA is just minutes from sports arenas, music venues, shopping, dining, and national landmarks.</li>
-                      </ul>
-                      <p><span class="important">Interested?</span></p>
-                      <p><a href="#">Confirm your informaton</a> now and we'll keep you "in the know" with the latest campus news and events.</p>
-
-                      <!-- Button -->
-                      <table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
-                        <tbody>
-                          <tr>
-                            <td align="center">
-                              <table border="0" cellpadding="0" cellspacing="0">
-                                <tbody>
-                                  <tr>
-                                    <td> <a href="#" target="_blank">Confirm Your Interest!</a> </td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                      <!-- End Button -->
-
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-          </table>
-          <!-- End Main Content -->
-
-          <!-- Footer -->
-          <div class="footer">
-            <table border="0" cellpadding="0" cellspacing="0" class="main">
-              <tr>
-                <td>
-                  <img src="https://gallery.mailchimp.com/6d9b39a671fced4a59b9bbbc0/images/2722cb01-bb31-44f4-805a-7b40d0b55ba8.png" alt="Sample University Footer">
-                </td>
-              </tr>
             </table>
+            <!-- End Main Content -->
+
+            <!-- Footer -->
+            <div class="footer">
+              <table border="0" cellpadding="0" cellspacing="0" class="main">
+                <tr>
+                  <td>
+                    <img src="https://gallery.mailchimp.com/6d9b39a671fced4a59b9bbbc0/images/2722cb01-bb31-44f4-805a-7b40d0b55ba8.png" alt="Sample University Footer">
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <!-- End Footer -->
+
           </div>
-          <!-- End Footer -->
+        </td>
+        <td>&nbsp;</td>
+      </tr>
+    </table>
+    <!-- End Email -->
 
-        </div>
-      </td>
-      <td>&nbsp;</td>
-    </tr>
-  </table>
-  <!-- End Email -->
-
-</body>
+  </body>
 </html>
