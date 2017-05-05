@@ -2,6 +2,9 @@
 
 #### By _**Megan Kaluza**_
 
+# _Live_
+![screenshot](screen_shot.png)
+
 ## Description
 
 _Objectives_
